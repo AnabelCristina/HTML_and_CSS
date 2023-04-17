@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Practice</title>
+        <link rel="shortcut icon" href="images/favicon/favicon-32x32.png" type="image/png">
+    </head>
+
+    <body>
+        <h1 id="title">Welcome!</h1>
+        <p>
+            This is just a practice page that contains some amount
+            of information about HTML.
+        </p>
+        <h2>Index</h2>
+        <ol>
+            <li><a href="#underline">Underline</a></li>
+            <li><a href="#images">Images and Paths</a></li>
+            <li><a href="#tables">Tables</a></li>
+            <li><a href="#inlinecss">Inline CSS</a></li>
+        </ol>
+        
+        
+        <h3 id="underline">1. Underline (<a href="#title">Back to top</a>)</h3>
+        <h4>creating a paragraph with underlined text </h3>
+        <p>
+            <u>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Amet labore eum necessitatibus, accusamus iusto cum ad,
+             reiciendis quod perferendis aut cupiditate soluta
+             exercitationem mollitia illum dolorem veniam
+             eaque veritatis culpa!</u>
+        </p>
+        <h4>A better way of doing it with inline CSS </h3>
+        <p>
+            <span style = "text-decoration: underline"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Repudiandae tempora porro blanditiis aliquid consequatur
+            quae provident dignissimos soluta omnis in aperiam at
+            animi modi nostrum quam autem ex, dolore maiores.</span>
+        </p>
+        <br>
+        <p>
+            It may looks like nothing has changed but the simple fact
+            that the second example is using CSS, allow us to inspect
+            the element in the browser and enable or disable the underline.
+            That's good for debugging, for instance.
+        </p>
+
+
+        <h3 id="images">2. Images and Paths (<a href="#title">Back to top</a>)</h3>
+        <p>
+            Using path to show a image. You have to reference the exact 
+            folder that contains the image.
+        </p>
+        <img src="images/computer.jpg" alt="computer">
+
+        <h3 id="tables">3. Tables (<a href="#title">Back to top</a>) </h3>
+        <p>
+            First let's create a simple table. The border and width properties
+            were added just so we can visualize better the table format.
+        </p>
+        <table border="1" width="100%">
+            <tr>
+                <td>Row 1 Cell 1</td>
+                <td>Row 1 Cell 2</td>
+                <td>Row 1 Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 2 Cell 1</td>
+                <td>Row 2 Cell 2</td>
+                <td>Row 2 Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 3 Cell 1</td>
+                <td>Row 3 Cell 2</td>
+                <td>Row 3 Cell 3</td>
+            </tr>
+        </table>
+
+        
+        <p>Next there's the same table above but with some column and row merging.</p>
+        <table border="1" width="100%">
+            <tr>
+                <td colspan="3">Row 1 Cell 1</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Row 2 Cell 1</td>
+                <td colspan="2">Row 2 Cell 2</td>
+
+            </tr>
+            <tr>
+                <td>Row 3 Cell 2</td>
+                <td>Row 3 Cell 3</td>
+            </tr>
+        </table>
+        
+        <p>Finally, the same table structure but using some fancy layout</p>
+        <table border="1" width="50%">
+            <tr>
+                <th colspan="2">Title of the table</th>
+            </tr>
+            <tr>
+                <td width="20%">
+                    <h3>navigation</h3>
+                </td>
+                <td>
+                    <h3>content</h3>
+                </td>
+            </tr>
+
+        </table>
+
+        <h3 id="inlinecss">4. Inline CSS (<a href="#title">Back to top</a>) </h3>
+        <p>
+            With some CSS we are able to customize our page. Some things like color, font,
+        spacing and so on.
+        </p> 
+       
+        <div style="padding: 30px; color: white; background-color:black;" >
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Facilis libero repudiandae pariatur. Explicabo dolor nostrum, 
+            doloribus, dicta esse unde dolorem incidunt magni dignissimos
+            obcaecati impedit, recusandae architecto beatae cumque rerum.
+        </div>
+    </body>
+</html>
