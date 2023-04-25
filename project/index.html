@@ -17,6 +17,10 @@
             <li><a href="#images">Images and Paths</a></li>
             <li><a href="#tables">Tables</a></li>
             <li><a href="#inlinecss">Inline CSS</a></li>
+            <li><a href="#htmlclasses">HTML Classes</a></li>
+            <li><a href="#htmlid">HTML ID's</a></li>
+            <li><a href="#codeformatting">Code Formatting</a></li>
+            <li><a href="#forms">Forms</a></li>
         </ol>
         
         
@@ -120,5 +124,144 @@
             doloribus, dicta esse unde dolorem incidunt magni dignissimos
             obcaecati impedit, recusandae architecto beatae cumque rerum.
         </div>
+
+        <h3 id="htmlclasses">5. HTML Classes (<a href="#title">Back to top</a>) </h3>
+        <p> Using inline CSS can be repetitive and annoying. Imagine that you need to
+            create ten div and then apply the same css in those. There's an easiest way
+            to do it using classes. Classes are a reusable piece of code that helps you
+            applying the same customization in different places in your code. Define a
+            class in the div and then reference this class in the style scope, with all
+            the attributes described inside of it.<br>
+            Classes are represented with . in the CSS style.
+        </p>
+
+        <style>
+            .className{
+                padding: 30px; 
+                color: white; 
+                background-color:black;
+            }
+
+            .uppercase{
+                text-transform: uppercase;
+            }
+        </style>
+
+        <div class="className">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Facilis libero repudiandae pariatur. Explicabo dolor nostrum, 
+            doloribus, dicta esse unde dolorem incidunt magni dignissimos
+            obcaecati impedit, recusandae architecto beatae cumque rerum.
+        </div>
+        <br>
+        <div class = "uppercase">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Facilis libero repudiandae pariatur. Explicabo dolor nostrum, 
+            doloribus, dicta esse unde dolorem incidunt magni dignissimos
+            obcaecati impedit, recusandae architecto beatae cumque rerum.
+        </div>
+        <br>
+        <div class="className uppercase">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Facilis libero repudiandae pariatur. Explicabo dolor nostrum, 
+            doloribus, dicta esse unde dolorem incidunt magni dignissimos
+            obcaecati impedit, recusandae architecto beatae cumque rerum.
+        </div>
+
+        <h3 id="htmlid">6.HTML ID's (<a href="#title">Back to top</a>) </h3>
+        <p>We have already defined ID's in this page, using the "index" and "back to top"
+            links. The news is that we can also add an ID to the style scope and 
+            customize the piece of code that contains the id, as well as what we did 
+            with classes. ID's should be unique, it's like yours driver license, you
+            can't have more than one.<br>
+            ID's are represented with # in the CSS Style.
+        </p>
+
+        <style>
+            #testingId{
+                border: 12px solid red;
+            }
+        </style>
+
+        <div id="testingId">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Facilis libero repudiandae pariatur. Explicabo dolor nostrum, 
+            doloribus, dicta esse unde dolorem incidunt magni dignissimos
+            obcaecati impedit, recusandae architecto beatae cumque rerum.
+        </div>  
+
+        <h3 id="codeformatting">7.Code Formatting (<a href="#title">Back to top</a>) </h3>
+        <pre>
+            The pre-tag is a block with prefformated text.
+            It cares about white-spaces                  and              spaces       between              words.
+It even counts the identation of your code.
+
+            <b>This is a block element.</b>
+                
+        </pre>
+        <p>
+            <code>
+                <b>This is a inline element, using code-tag.</b><br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem similique eligendi placeat neque magni error tempora ullam necessitatibus perspiciatis. Aut, ad aspernatur velit sed similique non eaque nostrum. Aspernatur, maxime.
+            </code>
+            The code above is not space sensitive.
+
+        </p>
+
+        <h3 id="forms">8.Forms (<a href="#title">Back to top</a>) </h3>
+        <p>Forms is how you send some input data to a server. We don't have one 
+            here because this is only a HTML file. <br>
+            Forms are used to create contact forms, update forms, login forms, sing
+            up forms and so on.
+        </p>
+        <p>- Input Field</p>
+        <form action="" method="">
+            <input required type="text" value="Helo World" placeholder="Enter Your Name">
+        </form>
+
+        <p>- Text Area Field</p>
+        <form action="">
+            <textarea name="textarea" id="" cols="27" rows="6" placeholder="This is a placeholder">
+                Text in here.
+                White space does matter in here!
+            </textarea>
+        </form>
+
+        <p>- Button</p>
+        <form action="" method="GET">
+            <button type="submit">Submit!</button>
+        </form>
+
+        <p>- Select element</p>
+        <p>When you submit your form with a drop down seleciton, the value
+            that is sent is the one that is set in value="" and not what
+            is written in the field.
+        </p>
+        <form action="">
+            <select name="selected_option" id="">
+                <option value="" disabled="disabled">- Disabled -</option>
+                <option value="default" selected="selected">Selected by default</option>
+                <option value="value1">This is Value 1</option>
+                <option value="value2">This is Value 2 </option>
+                <option value="value3">This is Value 3</option>
+                <option value="value4">This is Value 4</option>
+                <option value="value5">This is Value 5</option>
+                <option value="value6">This is Value 6</option>
+
+            </select>
+        </form>
+
+        <h3 id="embeds">9.Embeds (<a href="#title">Back to top</a>) </h3>
+            <iframe 
+                width="560"
+                height="315" 
+                src="https://www.youtube.com/embed/WPdWvnAAurg"
+                title="Aespa -Savage"
+                frameborder="2"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </iframe>
     </body>
+    <footer align="center"> <br>Anabel Cristina &copy; 2023 </footer>
 </html>
